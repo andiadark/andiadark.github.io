@@ -1,0 +1,59 @@
+Assignment Black-Box Testing-1
+
+========================================================================
+BEFORE GETTING STARTED:
+
+    Terminal command:   sudo apt-get install csh
+Follow the program assignment given below.
+
+========================
+PROGRAM ASSIGNMENTS
+
+(4) Andia Dark
+
+Programs
+
+1 - spc_cdi.txt
+2 - spc_class.txt (NOT USED)
+3 - spc_day2date.txt
+4 - spc_dup.txt
+5 - spc_mup.txt
+6 - spc_pfg.txt
+7 - spc_ret.txt
+
+========================
+
+========================
+ACTIONS:
+
+   1) Construct decision table for program. Discuss with one classmate to
+      verify correctness.
+
+   2) Develop functional test cases based on rules(columns) in decision table.
+      2.1  Store these test cases in tci_xxxx-ftc.txt.
+      2.2  Discuss your test cases with one classmate.
+
+   3) Develop boundary test cases based on the conditions in the decision table.
+      3.1  Store these test cases in tci_xxxx-bbtc.txt.
+      3.2  Discuss your test cases with one classmate.
+
+   4) Begin working on the test_xxxx.csh automation. I will provide demo versions of
+      each program so you can see what the outputs LOOK LIKE.
+
+   5) I will give you versions of your program to test in class on Tuesday -- I want
+      to see your "reaction" to the quality of your test cases.
+
+      This time consider adding arguments to your test script, such as:
+
+          (1) tester
+          (2) run_filename
+          (3) tdi_filename
+          (4) utr_filename
+
+      These changes will enable you to use the SAME script to test DIFFERENT VERSIONS
+      of the program under test, which you will do in the next assignment.
+
+      Feel free to exchange ideas about these matters. 
+
+      NOTE: We are still using C-SHELL scripts.
+

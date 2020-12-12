@@ -1,0 +1,7 @@
+In order to conduct the test I chose answers that
+I knew would have a non zero root value.
+
+I do not think the test cases I chose were bad but my
+level of understand of what the program was asking for limited 
+what I felt was beneficial to testing the program.
+

@@ -1,0 +1,4 @@
+SIZE ELEMENTS     EXP_OUTPUT
+6    2 3 4 6 7 5  2
+5    1 2 3 4 5    0
+

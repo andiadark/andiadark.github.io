@@ -1,0 +1,552 @@
+-----------------------------------------------------
+Wed Dec  9 02:19:51 UTC 2020
+-----------------------------------------------------
+Grading Report for pluto
+Assignment: PROG7
+Program:    utility_Billing.cpp
+ 
+MAX Score = 63
+Grading Deductions/Details: 
+-----------------------------------------------------
+ 
+-------------------------------------------------------------
+P1 - Program submission (0)
+-------------------------------------------------------------
+     +0  -> (Rationale: Assignment submitted)
+-------------------------------------------------------------
+P2 - Program compilation (1)
+-------------------------------------------------------------
+     +1  -> (Rationale: Successful compilation)
+ 
+SKIPPING DOCUMENTATION CHECK STEP ... 
+ 
+-------------------------------------------------------------
+P4 - Execution Correctness and Layout (62)
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+EXEC_check  -- Execution Correctness (62)
+-------------------------------------------------------------
+ 
+ 
+==> TestCase 1 
+ 
+  INPUT DATA BEGIN =====> 
+ 
+      cin::readings.txt
+      readings.txt::
+ 
+  INPUT DATA END <===== 
+
+  OUTPUT DATA BEGIN =====> 
+     cout::Enter name of input file:   OUTPUT DATA END <===== 
+
+  =========== CHECKING RESULTS ============
+
+        =========== CHECKING OUTPUT to cout  ==========
+      [1] CORRECT (1) ==> ..... check for 'Enter name of input file: 
+     [-1] NOT FOUND ==> ..... check for '#CUSTOMERS     =    0
+     [-1] NOT FOUND ==> ..... check for '#BAD READINGS  =    0
+     [-1] NOT FOUND ==> ..... check for 'TOTAL KWH USED =        0
+     [-1] NOT FOUND ==> ..... check for 'AVG KWH USED   =        0
+     [-1] NOT FOUND ==> ..... check for 'TOTAL CHARGES = $      0.00
+     [-1] NOT FOUND ==> ..... check for 'AVG BILL      = $      0.00
+     
+     
+     1 / 7 CORRECT output
+
+  =========== END CHECKING RESULTS ============
+
+ 
+ 
+==> TestCase 2 
+ 
+  INPUT DATA BEGIN =====> 
+ 
+      cin::readings.txt
+      readings.txt::04304450 04305150 Edward L Jones
+ 
+  INPUT DATA END <===== 
+
+  OUTPUT DATA BEGIN =====> 
+     cout::Enter name of input file: 
+     cout::4304450 Edward L Jones 4305150
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Edward L Jones
+     cout::CHARGES DUE:    $  163.00
+     cout::POWER USAGE:      700 KWH
+     cout::METER READINGS: 04304450 INITIAL  04305150 FINAL
+     cout::-------------------------------------------------
+     cout::#CUSTOMERS     =   1
+     cout::#BAD READINGS  =   0
+     cout::TOTAL KWH USED =  700
+     cout::AVG KWH USED   =   700.00
+     cout::
+     cout::
+     cout::TOTAL CHARGES = $  163.00
+     cout::AVG BILL      = $   163.00
+  OUTPUT DATA END <===== 
+
+  =========== CHECKING RESULTS ============
+
+        =========== CHECKING OUTPUT to cout  ==========
+     [-1] NOT FOUND ==> ..... check for '#4304450 Edward L Jones 4305150
+     [-1] NOT FOUND ==> ..... check for '#CUSTOMER NAME:  Edward L Jones
+     [-1] NOT FOUND ==> ..... check for '#CHARGES DUE:    $ 163.00
+     [-1] NOT FOUND ==> ..... check for '#POWER USAGE:      700 KWH
+     [-1] NOT FOUND ==> ..... check for '#METER READINGS: 04304450 INITIAL  04305150 FINAL
+     [-1] NOT FOUND ==> ..... check for '##CUSTOMERS     =    1
+     [-1] NOT FOUND ==> ..... check for '##BAD READINGS  =    0
+     [-1] NOT FOUND ==> ..... check for '#TOTAL KWH USED =      700
+     [-1] NOT FOUND ==> ..... check for '#AVG KWH USED   =      700
+     [-1] NOT FOUND ==> ..... check for '#TOTAL CHARGES = $    163.00
+     [-1] NOT FOUND ==> ..... check for '#AVG BILL      = $    163.00
+     
+     
+     0 / 11 CORRECT output
+
+  =========== END CHECKING RESULTS ============
+
+ 
+ 
+==> TestCase 3 
+ 
+  INPUT DATA BEGIN =====> 
+ 
+      cin::readings.txt
+      readings.txt::04324593 04398765 Luke M Robbinson
+      readings.txt::04424343 04449899 Robert L Clarke
+      readings.txt::03245434 04232343 Zeda M Dark
+      readings.txt::04344652 04345684 Zeus M Mattaus 
+      readings.txt::02434894 04234934 Marcus L Reid
+ 
+  INPUT DATA END <===== 
+
+  OUTPUT DATA BEGIN =====> 
+     cout::Enter name of input file: 
+     cout::4324593 Luke M Robbinson 4398765
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Luke M Robbinson
+     cout::CHARGES DUE:    $  1660.99
+     cout::POWER USAGE:      74172 KWH
+     cout::METER READINGS: 04324593 INITIAL  04398765 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::4424343 Robert L Clarke 4449899
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Robert L Clarke
+     cout::CHARGES DUE:    $  834.52
+     cout::POWER USAGE:      25556 KWH
+     cout::METER READINGS: 04424343 INITIAL  04449899 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::3245434 Zeda M Dark 4232343
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Zeda M Dark
+     cout::CHARGES DUE:    $  17177.52
+     cout::POWER USAGE:      986909 KWH
+     cout::METER READINGS: 03245434 INITIAL  04232343 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::4344652 Zeus M Mattaus  4345684
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Zeus M Mattaus 
+     cout::CHARGES DUE:    $  246.49
+     cout::POWER USAGE:      1032 KWH
+     cout::METER READINGS: 04344652 INITIAL  04345684 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::2434894 Marcus L Reid 4234934
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Marcus L Reid
+     cout::CHARGES DUE:    $  31000.75
+     cout::POWER USAGE:      1800040 KWH
+     cout::METER READINGS: 02434894 INITIAL  04234934 FINAL
+     cout::-------------------------------------------------
+     cout::#CUSTOMERS     =   5
+     cout::#BAD READINGS  =   0
+     cout::TOTAL KWH USED =  2887709
+     cout::AVG KWH USED   =   577541.00
+     cout::
+     cout::
+     cout::TOTAL CHARGES = $  50920.28
+     cout::AVG BILL      = $   10184.06
+  OUTPUT DATA END <===== 
+
+  =========== CHECKING RESULTS ============
+
+        =========== CHECKING OUTPUT to cout  ==========
+      [1] CORRECT (37) ==> ..... check for '#CUSTOMERS     =    5
+      [1] CORRECT (38) ==> ..... check for '#BAD READINGS  =    0
+      [1] CORRECT (39) ==> ..... check for 'TOTAL KWH USED =  2887709
+      [1] CORRECT (40) ==> ..... check for 'AVG KWH USED   =   577541
+      [1] CORRECT (41) ==> ..... check for 'TOTAL CHARGES = $  50920.28
+      [1] CORRECT (42) ==> ..... check for 'AVG BILL      = $  10184.06
+     
+     
+     6 / 6 CORRECT output
+
+  =========== END CHECKING RESULTS ============
+
+ 
+ 
+==> TestCase 4 
+ 
+  INPUT DATA BEGIN =====> 
+ 
+      cin::readings.txt
+      readings.txt::00000000 04323904 Dawn R Green
+      readings.txt::00455555 04555555 Gabby A Abrams
+ 
+  INPUT DATA END <===== 
+
+  OUTPUT DATA BEGIN =====> 
+     cout::Enter name of input file: 
+     cout::0 Dawn R Green 4323904
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Dawn R Green
+     cout::CHARGES DUE:    $  73906.44
+     cout::POWER USAGE:      4323904 KWH
+     cout::METER READINGS: 00000000 INITIAL  04323904 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::455555 Gabby A Abrams 4555555
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Gabby A Abrams
+     cout::CHARGES DUE:    $  70100.07
+     cout::POWER USAGE:      4100000 KWH
+     cout::METER READINGS: 00455555 INITIAL  04555555 FINAL
+     cout::-------------------------------------------------
+     cout::#CUSTOMERS     =   2
+     cout::#BAD READINGS  =   0
+     cout::TOTAL KWH USED =  8423904
+     cout::AVG KWH USED   =   4211952.00
+     cout::
+     cout::
+     cout::TOTAL CHARGES = $  144006.50
+     cout::AVG BILL      = $   72003.25
+  OUTPUT DATA END <===== 
+
+  =========== CHECKING RESULTS ============
+
+        =========== CHECKING OUTPUT to cout  ==========
+      [1] CORRECT (16) ==> ..... check for 'CUSTOMERS     =    2
+      [1] CORRECT (17) ==> ..... check for '#BAD READINGS  =    0
+     [-1] NOT FOUND ==> ..... check for '#TOTAL KWH USED =  8423904
+     [-1] NOT FOUND ==> ..... check for '#AVG KWH USED   =  4211952
+     [-1] NOT FOUND ==> ..... check for '#TOTAL CHARGES = $ 144006.50
+     [-1] NOT FOUND ==> ..... check for '#AVG BILL      = $  72003.25
+     
+     
+     2 / 6 CORRECT output
+
+  =========== END CHECKING RESULTS ============
+
+ 
+ 
+==> TestCase 5 
+ 
+  INPUT DATA BEGIN =====> 
+ 
+      cin::readings.txt
+      readings.txt::0000 004329 Mark A Lewis
+      readings.txt::04323564 09832176 Jordan R Jones
+ 
+  INPUT DATA END <===== 
+
+  OUTPUT DATA BEGIN =====> 
+     cout::Enter name of input file: 
+     cout::0 Mark A Lewis 4329
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Mark A Lewis
+     cout::CHARGES DUE:    $  473.66
+     cout::POWER USAGE:      4329 KWH
+     cout::METER READINGS: 00000000 INITIAL  00004329 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::4323564 Jordan R Jones 9832176
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Jordan R Jones
+     cout::CHARGES DUE:    $  94046.48
+     cout::POWER USAGE:      5508612 KWH
+     cout::METER READINGS: 04323564 INITIAL  09832176 FINAL
+     cout::-------------------------------------------------
+     cout::#CUSTOMERS     =   2
+     cout::#BAD READINGS  =   0
+     cout::TOTAL KWH USED =  5512941
+     cout::AVG KWH USED   =   2756470.00
+     cout::
+     cout::
+     cout::TOTAL CHARGES = $  94520.14
+     cout::AVG BILL      = $   47260.07
+  OUTPUT DATA END <===== 
+
+  =========== CHECKING RESULTS ============
+
+        =========== CHECKING OUTPUT to cout  ==========
+     [-1] NOT FOUND ==> ..... check for '##CUSTOMERS     =    2
+     [-1] NOT FOUND ==> ..... check for '##BAD READINGS  =    0
+     [-1] NOT FOUND ==> ..... check for '#TOTAL KWH USED =  5512941
+     [-1] NOT FOUND ==> ..... check for '#AVG KWH USED   =  2756470
+     [-1] NOT FOUND ==> ..... check for '#TOTAL CHARGES = $  94520.14
+     [-1] NOT FOUND ==> ..... check for '#AVG BILL      = $  47260.07
+     
+     
+     0 / 6 CORRECT output
+
+  =========== END CHECKING RESULTS ============
+
+ 
+ 
+==> TestCase 6 
+ 
+  INPUT DATA BEGIN =====> 
+ 
+      cin::readings.txt
+      readings.txt::04304450 04305150 Ricky L Bobby
+      readings.txt::04304450 04305150 Edward L Jones
+      readings.txt::04304450 04205150 Martion L Alien
+      readings.txt::04543894 04705150 Marcus L Clarke
+ 
+  INPUT DATA END <===== 
+
+  OUTPUT DATA BEGIN =====> 
+     cout::Enter name of input file: 
+     cout::4304450 Ricky L Bobby 4305150
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Ricky L Bobby
+     cout::CHARGES DUE:    $  163.00
+     cout::POWER USAGE:      700 KWH
+     cout::METER READINGS: 04304450 INITIAL  04305150 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::4304450 Edward L Jones 4305150
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Edward L Jones
+     cout::CHARGES DUE:    $  163.00
+     cout::POWER USAGE:      700 KWH
+     cout::METER READINGS: 04304450 INITIAL  04305150 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::4304450 Martion L Alien 4205150
+     cout::
+     cout::
+     cout::4304450 Martion L Alien 4205150
+     cout::
+     cout::BAD METER READINGS:  04304450(START)   04205150(END)
+     cout::CUSTOMER NAME:  Martion L Alien
+     cout::CHARGES DUE:    $DEFERRED 
+     cout::POWER USAGE:    ????? KWH
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Martion L Alien
+     cout::CHARGES DUE:    $  163.00
+     cout::POWER USAGE:      700 KWH
+     cout::METER READINGS: 04304450 INITIAL  04205150 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::4543894 Marcus L Clarke 4705150
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Marcus L Clarke
+     cout::CHARGES DUE:    $  3141.42
+     cout::POWER USAGE:      161256 KWH
+     cout::METER READINGS: 04543894 INITIAL  04705150 FINAL
+     cout::-------------------------------------------------
+     cout::#CUSTOMERS     =   4
+     cout::#BAD READINGS  =   1
+     cout::TOTAL KWH USED =  163356
+     cout::AVG KWH USED   =   40839.00
+     cout::
+     cout::
+     cout::TOTAL CHARGES = $  3630.42
+     cout::AVG BILL      = $   907.61
+  OUTPUT DATA END <===== 
+
+  =========== CHECKING RESULTS ============
+
+        =========== CHECKING OUTPUT to cout  ==========
+     [-1] NOT FOUND ==> ..... check for '#CUSTOMER NAME:  Martion L Alien
+     [-1] NOT FOUND ==> ..... check for '#CHARGES DUE:    $DEFERRED
+     [-1] NOT FOUND ==> ..... check for '#POWER USAGE:    ????? KWH
+     [-1] NOT FOUND ==> ..... check for '#METER READINGS: 04304450 INITIAL  04205150 FINAL
+      [1] CORRECT (35) ==> ..... check for '#CUSTOMERS     =    4
+     [-1] NOT FOUND ==> ..... check for '##BAD READINGS  =    1
+     [-1] NOT FOUND ==> ..... check for '#TOTAL KWH USED =   162656
+     [-1] NOT FOUND ==> ..... check for '#AVG KWH USED   =    54218
+     [-1] NOT FOUND ==> ..... check for '#TOTAL CHARGES = $   3467.42
+     [-1] NOT FOUND ==> ..... check for '#AVG BILL      = $   1155.81
+     
+     
+     1 / 10 CORRECT output
+
+  =========== END CHECKING RESULTS ============
+
+ 
+ 
+==> TestCase 7 
+ 
+  INPUT DATA BEGIN =====> 
+ 
+      cin::readings.txt
+      readings.txt::43234567 43234567 Bob A Belcher
+      readings.txt::43234567 43234817 Louise R Roger
+      readings.txt::03432345 03432845 Gene T Weiss
+      readings.txt::00234539 00235040 Susan M Reed
+      readings.txt::00123244 00124026 Tina B Belcher
+      readings.txt::05430000 05440000 Wayne R Brady
+      readings.txt::05440000 05450001 Beyonce L Knowles
+      readings.txt::02324564 02327020 Sasha W Evans
+      readings.txt::01234567 01237566 Nate T Doug
+      readings.txt::04537238 04540238 Francis L Pants
+ 
+  INPUT DATA END <===== 
+
+  OUTPUT DATA BEGIN =====> 
+     cout::Enter name of input file: 
+     cout::43234567 Bob A Belcher 43234567
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Bob A Belcher
+     cout::CHARGES DUE:    $  53.00
+     cout::POWER USAGE:      0 KWH
+     cout::METER READINGS: 43234567 INITIAL  43234567 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::43234567 Louise R Roger 43234817
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Louise R Roger
+     cout::CHARGES DUE:    $  94.25
+     cout::POWER USAGE:      250 KWH
+     cout::METER READINGS: 43234567 INITIAL  43234817 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::3432345 Gene T Weiss 3432845
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Gene T Weiss
+     cout::CHARGES DUE:    $  135.50
+     cout::POWER USAGE:      500 KWH
+     cout::METER READINGS: 03432345 INITIAL  03432845 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::234539 Susan M Reed 235040
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Susan M Reed
+     cout::CHARGES DUE:    $  138.12
+     cout::POWER USAGE:      501 KWH
+     cout::METER READINGS: 00234539 INITIAL  00235040 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::123244 Tina B Belcher 124026
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Tina B Belcher
+     cout::CHARGES DUE:    $  173.25
+     cout::POWER USAGE:      782 KWH
+     cout::METER READINGS: 00123244 INITIAL  00124026 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::5430000 Wayne R Brady 5440000
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Wayne R Brady
+     cout::CHARGES DUE:    $  570.07
+     cout::POWER USAGE:      10000 KWH
+     cout::METER READINGS: 05430000 INITIAL  05440000 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::5440000 Beyonce L Knowles 5450001
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Beyonce L Knowles
+     cout::CHARGES DUE:    $  570.09
+     cout::POWER USAGE:      10001 KWH
+     cout::METER READINGS: 05440000 INITIAL  05450001 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::2324564 Sasha W Evans 2327020
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Sasha W Evans
+     cout::CHARGES DUE:    $  413.10
+     cout::POWER USAGE:      2456 KWH
+     cout::METER READINGS: 02324564 INITIAL  02327020 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::1234567 Nate T Doug 1237566
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Nate T Doug
+     cout::CHARGES DUE:    $  476.63
+     cout::POWER USAGE:      2999 KWH
+     cout::METER READINGS: 01234567 INITIAL  01237566 FINAL
+     cout::-------------------------------------------------
+     cout::
+     cout::4537238 Francis L Pants 4540238
+     cout::
+     cout::-------------------------------------------------
+     cout::CUSTOMER NAME:  Francis L Pants
+     cout::CHARGES DUE:    $  476.75
+     cout::POWER USAGE:      3000 KWH
+     cout::METER READINGS: 04537238 INITIAL  04540238 FINAL
+     cout::-------------------------------------------------
+     cout::#CUSTOMERS     =   10
+     cout::#BAD READINGS  =   0
+     cout::TOTAL KWH USED =  30489
+     cout::AVG KWH USED   =   3048.00
+     cout::
+     cout::
+     cout::TOTAL CHARGES = $  3100.77
+     cout::AVG BILL      = $   310.08
+  OUTPUT DATA END <===== 
+
+  =========== CHECKING RESULTS ============
+
+        =========== CHECKING OUTPUT to cout  ==========
+     [-1] NOT FOUND ==> ..... check for 'POWER USAGE:        0 KWH
+      [1] CORRECT (13) ==> ..... check for 'POWER USAGE:      250 KWH
+      [1] CORRECT (20) ==> ..... check for 'POWER USAGE:      500 KWH
+      [1] CORRECT (27) ==> ..... check for 'POWER USAGE:      501 KWH
+      [1] CORRECT (34) ==> ..... check for 'POWER USAGE:      782 KWH
+     [-1] NOT FOUND ==> ..... check for 'POWER USAGE:    10000 KWH
+     [-1] NOT FOUND ==> ..... check for 'POWER USAGE:    10001 KWH
+     [-1] NOT FOUND ==> ..... check for 'POWER USAGE:     2456 KWH
+     [-1] NOT FOUND ==> ..... check for 'POWER USAGE:     2999 KWH
+     [-1] NOT FOUND ==> ..... check for 'POWER USAGE:     3000 KWH
+      [1] CORRECT (72) ==> ..... check for '#CUSTOMERS     =   10
+     [-1] NOT FOUND ==> ..... check for '#BAD READINGS  =    0
+     [-1] NOT FOUND ==> ..... check for 'TOTAL KWH USED =    30489
+     [-1] NOT FOUND ==> ..... check for 'AVG KWH USED   =     3048
+     [-1] NOT FOUND ==> ..... check for 'TOTAL CHARGES = $   3100.77
+     [-1] NOT FOUND ==> ..... check for 'AVG BILL      = $    310.08
+     
+     
+     5 / 16 CORRECT output
+
+  =========== END CHECKING RESULTS ============
+
+        
+15 / 62 CORRECT EXECUTION output
+        
+ 
+Execution Points = 15 / 62 
+ 
+ 
+myPROG7:utility_Billing.cpp pluto SCORE = 16 / 63  
+ 
+-----------------------------------------------------

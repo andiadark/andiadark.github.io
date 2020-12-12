@@ -1,0 +1,34 @@
+#TC1				#--empty file
+
+#TC2 04304450  04305150 Edward L Jones #--single entry
+
+#TC3 04324593 04398765 Luke M Robbinson	#-- large difference
+     04424343 04449899 Robert L Clarke #-- large difference 
+     03245434 04232343 Zeda M Dark #--large difference 
+     04344652 04345684 Zeus M Mattaus #--large difference
+     02434894 04234934 Marcus L Reid #-- large difference
+	
+#TC4 00000000 04323904 Dawn R Green #-- large difference
+     00455555 04555555 Gabby A Abrams #--no change
+
+#TC5 0000 004329 Mark A Lewis #-- large difference
+     04323564 09832176 Jordan R Jones#-- large difference
+
+#TC6 04304450  04305150 Ricky L Bobby
+     04304450  04305150 Edward L Jones
+     04304450  04205150 Martion L Alien #-- bad meter reading
+     04543894  04705150 Marcus L Clarke
+
+	
+#TC7 43234567 43234567	    #-- no  change
+     43234567 43234817	    #-- 250 difference
+     03432345 03432845	    #-- 500 difference
+     00234539 00235040	    #-- 501 difference
+     00123244 00124026	    #-- 782 difference
+     05430000 05440000	    #-- 1000 difference
+     05440000 05450001	    #-- 1001 difference
+     02324564 02327020	    #-- 2456 difference
+     01234567 01237566	    #-- 2999 difference
+     04537238 04540238	    #-- 3000 difference
+	
+					
